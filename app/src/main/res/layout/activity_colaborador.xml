@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.activity.ColaboradorActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/activity_colaborador_dados_colaborador">
+
+        <ImageView
+            android:id="@+id/activity_colaborador_imageView"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/activity_colaborador_imagem_do_colaborador"
+            android:src="@drawable/ic_colaborador_avatar"
+            app:layout_constraintBottom_toTopOf="@id/activity_colaborador_label_nome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/ic_colaborador_avatar" />
+
+        <TextView
+            android:id="@+id/activity_colaborador_label_nome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:clickable="true"
+            android:contentDescription="@string/activity_colaborador_label_nome"
+            android:focusable="true"
+            android:text="Nome:"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@id/activity_colaborador_nome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_colaborador_imageView" />
+
+        <TextView
+            android:id="@+id/activity_colaborador_nome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:clickable="true"
+            android:contentDescription="@string/activity_colaborador_nome"
+            android:focusable="true"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@id/activity_colaborador_label_email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_colaborador_label_nome"
+            tools:text="Roberto Wilker" />
+
+        <TextView
+            android:id="@+id/activity_colaborador_label_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:clickable="true"
+            android:contentDescription="@string/activity_colaborador_label_email"
+            android:focusable="true"
+            android:text="E-mail:"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@id/activity_colaborador_email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_colaborador_nome" />
+
+        <TextView
+            android:id="@+id/activity_colaborador_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:contentDescription="@string/activity_colaborador_email"
+            android:focusable="true"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toTopOf="@id/activity_colaborador_label_cpf"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_colaborador_label_email"
+            tools:text="r.w@gmail.com" />
+
+        <TextView
+            android:id="@+id/activity_colaborador_label_cpf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:contentDescription="@string/activity_colaborador_label_cpf"
+            android:focusable="true"
+            android:text="CPF:"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/activity_colaborador_email"
+            app:layout_constraintTop_toBottomOf="@id/activity_colaborador_email" />
+
+        <TextView
+            android:id="@+id/activity_colaborador_cpf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:clickable="true"
+            android:contentDescription="@string/activity_colaborador_cpf"
+            android:focusable="true"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/activity_colaborador_label_cpf"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/activity_colaborador_label_cpf"
+            tools:text="111.222.333-93" />
+
+        <TextView
+            android:id="@+id/activity_colaborador_label_dataDeNascimento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:contentDescription="@string/activity_colaborador_label_dataDeNascimento"
+            android:focusable="true"
+            android:text="Nascimento: "
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/activity_colaborador_dataDeNascimento"
+            app:layout_constraintEnd_toStartOf="@id/activity_colaborador_dataDeNascimento" />
+
+        <TextView
+            android:id="@+id/activity_colaborador_dataDeNascimento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:contentDescription="@string/activity_colaborador_dataDeNascimento"
+            android:focusable="true"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@id/activity_colaborador_email"
+            app:layout_constraintTop_toBottomOf="@id/activity_colaborador_email"
+            tools:text="11-12-1993" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

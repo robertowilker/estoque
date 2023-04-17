@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/activity_formulario_predio_label_cliente"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:text="@string/activity_formulario_predio_label_cliente"
+        android:textSize="22sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/activity_formulario_predio_cliente"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/activity_formulario_predio_label_cliente"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Itaú" />
+
+    <TextView
+        android:id="@+id/activity_formulario_predio_label_nome"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:text="@string/activity_formulario_predio_label_nome"
+        android:textSize="22sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_formulario_predio_label_cliente" />
+
+    <EditText
+        android:id="@+id/activity_formulario_predio_nome"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/activity_formulario_predio_label_cliente"
+        app:layout_constraintTop_toBottomOf="@id/activity_formulario_predio_cliente"
+        tools:text="3500" />
+
+    <TextView
+        android:id="@+id/activity_formulario_predio_label_endereco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:text="@string/activity_predio_label_endereco"
+        android:textSize="26sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_formulario_predio_nome" />
+
+    <EditText
+        android:id="@+id/activity_formulario_predio_rua"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/activity_formulario_predio_rua"
+        android:padding="8dp"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_formulario_predio_label_endereco"
+        tools:text="Av. Faria Lima" />
+
+    <EditText
+        android:id="@+id/activity_formulario_predio_numero"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:textSize="22sp"
+        android:hint="@string/activity_formulario_predio_numero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/activity_formulario_predio_rua"
+        app:layout_constraintTop_toBottomOf="@id/activity_formulario_predio_label_endereco"
+        tools:text="3500" />
+
+    <TextView
+        android:id="@+id/activity_formulario_predio_label_cep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:text="@string/activity_formulario_predio_label_cep"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_formulario_predio_rua" />
+
+    <EditText
+        android:id="@+id/activity_formulario_predio_cep"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/activity_formulario_predio_label_cep"
+        app:layout_constraintTop_toBottomOf="@id/activity_formulario_predio_rua"
+        tools:text="00000-000" />
+
+</android.support.constraint.ConstraintLayout>
