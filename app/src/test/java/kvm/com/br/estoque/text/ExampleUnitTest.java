@@ -1,4 +1,4 @@
-package kvm.com.br.estoque;
+package kvm.com.br.estoque.text;
 
 import org.junit.Test;
 

@@ -106,6 +106,20 @@
             app:layout_constraintTop_toBottomOf="@id/activity_formulario_colaborador_label_endereco" />
 
         <EditText
+            android:id="@+id/activity_formulario_colaborador_bairro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:hint="@string/activity_formulario_colaborador_hint_bairro"
+            android:inputType="textCapWords"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/activity_formulario_colaborador_rua"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_colaborador_rua" />
+
+        <EditText
             android:id="@+id/activity_formulario_colaborador_cep"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
@@ -117,7 +131,7 @@
             android:textSize="22sp"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/activity_formulario_colaborador_rua" />
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_colaborador_bairro" />
 
         <EditText
             android:id="@+id/activity_formulario_colaborador_numero"
@@ -131,7 +145,46 @@
             android:textSize="22sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@id/activity_formulario_colaborador_cep"
-            app:layout_constraintTop_toBottomOf="@id/activity_formulario_colaborador_rua" />
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_colaborador_bairro" />
+
+        <EditText
+            android:id="@+id/activity_formulario_colaborador_cidade"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:hint="@string/activity_formulario_colaborador_hint_cidade"
+            android:inputType="textCapWords"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_colaborador_cep" />
+
+        <EditText
+            android:id="@+id/activity_formulario_colaborador_uf"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:hint="@string/activity_formulario_colaborador_hint_uf"
+            android:inputType="textCapCharacters"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_colaborador_numero" />
+
+        <EditText
+            android:id="@+id/activity_formulario_colaborador_complemento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:hint="@string/activity_formulario_colaborador_hint_complemento"
+            android:inputType="textCapWords"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_colaborador_cidade" />
+
     </android.support.constraint.ConstraintLayout>
 </ScrollView>

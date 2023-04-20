@@ -22,7 +22,14 @@ public class EstoqueApplication extends Application {
                 "claitin.martin@kvminformatica.com.br",
                 11122233344L,
                 "123",
-                new Endereco(0, 4856720L, "Rua Junqueira", 92));
+                new Endereco(0,
+                        4856720L,
+                        "Rua Junqueira",
+                        92,
+                        "jD Campinas",
+                        "São Paulo",
+                        "SP",
+                        "casa"));
 
         colaboradorService.save(colaborador);
     }

@@ -23,9 +23,13 @@ public class FormularioColaboradorActivity extends AppCompatActivity implements 
     private EditText cpfEditText;
     private EditText dataDeNascimentoEditText;
     private EditText senhaEditText;
-    private EditText ruaEditText;
     private EditText cepEditText;
+    private EditText logradouroEditText;
     private EditText numeroEditText;
+    private EditText bairroEditText;
+    private EditText cidadeEditText;
+    private EditText ufEditText;
+    private EditText complementoEditText;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -42,7 +46,8 @@ public class FormularioColaboradorActivity extends AppCompatActivity implements 
         cpfEditText = findViewById(R.id.activity_formulario_colaborador_cpf);
         dataDeNascimentoEditText = findViewById(R.id.activity_formulario_colaborador_dataDeNascimento);
         senhaEditText = findViewById(R.id.activity_formulario_colaborador_senha);
-        ruaEditText = findViewById(R.id.activity_formulario_colaborador_rua);
+        logradouroEditText = findViewById(R.id.activity_formulario_colaborador_rua);
+        bairroEditText = findViewById(R.id.activity_formulario_colaborador_bairro);
         cepEditText = findViewById(R.id.activity_formulario_colaborador_cep);
         numeroEditText = findViewById(R.id.activity_formulario_colaborador_numero);
     }
@@ -75,9 +80,13 @@ public class FormularioColaboradorActivity extends AppCompatActivity implements 
         Long cpf = Long.valueOf(cpfEditText.getText().toString());
         String dataDeNascimento = dataDeNascimentoEditText.getText().toString();
         String senha = senhaEditText.getText().toString();
-        String rua = ruaEditText.getText().toString();
+        String logradouro = logradouroEditText.getText().toString();
+        String bairro = bairroEditText.getText().toString();
         Long cep = Long.valueOf(cepEditText.getText().toString());
         int numero = Integer.valueOf(numeroEditText.getText().toString());
+        String cidade = null;
+        String uf = null;
+        String complemento = null;
 
         Colaborador colaborador = new Colaborador(nome,
                 dataDeNascimento,
@@ -86,8 +95,12 @@ public class FormularioColaboradorActivity extends AppCompatActivity implements 
                 senha,
                 new Endereco(
                         cep,
-                        rua,
-                        numero
+                        logradouro,
+                        numero,
+                        bairro,
+                        cidade,
+                        uf,
+                        complemento
                 )
         );
         return colaborador;
