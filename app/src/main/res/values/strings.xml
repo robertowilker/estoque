@@ -39,11 +39,11 @@
     <string name="activity_predio_label_cep">CEP:</string>
 
 <!--    activity_formulario_predio-->
-    <string name="activity_formulario_predio_label_cliente">Cliente:</string>
-    <string name="activity_formulario_predio_label_nome">Nome:</string>
+    <string name="activity_formulario_predio_cliente">Cliente</string>
+    <string name="activity_formulario_predio_nome">Nome</string>
     <string name="activity_formulario_predio_label_formulario">Endereço</string>
     <string name="activity_formulario_predio_rua">Rua</string>
     <string name="activity_formulario_predio_numero">Nº</string>
-    <string name="activity_formulario_predio_label_cep">CEP:</string>
+    <string name="activity_formulario_predio_cep">CEP</string>
 
 </resources>
