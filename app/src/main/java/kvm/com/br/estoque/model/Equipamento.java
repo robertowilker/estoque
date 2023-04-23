@@ -6,22 +6,37 @@ public class Equipamento {
     private String nome;
     private String marca;
     private String modelo;
-    private String status;
-    private long qrCode;
-    private Sala sala;
+    private StatusDoEquipamento status;
+    private String qrCode;
+    private Predio predio;
+    private String sala;
     private Estoque estoque;
     private String observacao;
     private String numeroDeSerie;
 
     public Equipamento(){}
 
-    public Equipamento(long id, String nome, String marca, String modelo, String status, long qrCode, Sala sala, Estoque estoque, String observacao, String numeroDeSerie) {
+    public Equipamento(String nome, String marca, String modelo, StatusDoEquipamento status, String qrCode, Predio predio, String sala, Estoque estoque, String observacao, String numeroDeSerie) {
+        this.nome = nome;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.status = status;
+        this.qrCode = qrCode;
+        this.predio = predio;
+        this.sala = sala;
+        this.estoque = estoque;
+        this.observacao = observacao;
+        this.numeroDeSerie = numeroDeSerie;
+    }
+
+    public Equipamento(long id, String nome, String marca, String modelo, StatusDoEquipamento status, String qrCode, Predio predio, String sala, Estoque estoque, String observacao, String numeroDeSerie) {
         this.id = id;
         this.nome = nome;
         this.marca = marca;
         this.modelo = modelo;
         this.status = status;
         this.qrCode = qrCode;
+        this.predio = predio;
         this.sala = sala;
         this.estoque = estoque;
         this.observacao = observacao;
@@ -60,27 +75,35 @@ public class Equipamento {
         this.modelo = modelo;
     }
 
-    public String getStatus() {
+    public StatusDoEquipamento getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(StatusDoEquipamento status) {
         this.status = status;
     }
 
-    public long getQrCode() {
+    public String getQrCode() {
         return qrCode;
     }
 
-    public void setQrCode(long qrCode) {
+    public void setQrCode(String qrCode) {
         this.qrCode = qrCode;
     }
 
-    public Sala getSala() {
+    public Predio getPredio() {
+        return predio;
+    }
+
+    public void setPredio(Predio predio) {
+        this.predio = predio;
+    }
+
+    public String getSala() {
         return sala;
     }
 
-    public void setSala(Sala sala) {
+    public void setSala(String sala) {
         this.sala = sala;
     }
 
@@ -115,9 +138,10 @@ public class Equipamento {
                 ", nome='" + nome + '\'' +
                 ", marca='" + marca + '\'' +
                 ", modelo='" + modelo + '\'' +
-                ", status='" + status + '\'' +
-                ", qrCode=" + qrCode +
-                ", sala=" + sala +
+                ", status=" + status +
+                ", qrCode='" + qrCode + '\'' +
+                ", predio=" + predio +
+                ", sala='" + sala + '\'' +
                 ", estoque=" + estoque +
                 ", observacao='" + observacao + '\'' +
                 ", numeroDeSerie='" + numeroDeSerie + '\'' +

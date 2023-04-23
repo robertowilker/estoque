@@ -50,6 +50,9 @@ public class FormularioColaboradorActivity extends AppCompatActivity implements 
         bairroEditText = findViewById(R.id.activity_formulario_colaborador_bairro);
         cepEditText = findViewById(R.id.activity_formulario_colaborador_cep);
         numeroEditText = findViewById(R.id.activity_formulario_colaborador_numero);
+        cidadeEditText = findViewById(R.id.activity_formulario_colaborador_cidade);
+        ufEditText = findViewById(R.id.activity_formulario_colaborador_uf);
+        complementoEditText = findViewById(R.id.activity_formulario_colaborador_complemento);
     }
 
     @Override
@@ -84,9 +87,9 @@ public class FormularioColaboradorActivity extends AppCompatActivity implements 
         String bairro = bairroEditText.getText().toString();
         Long cep = Long.valueOf(cepEditText.getText().toString());
         int numero = Integer.valueOf(numeroEditText.getText().toString());
-        String cidade = null;
-        String uf = null;
-        String complemento = null;
+        String cidade = cidadeEditText.getText().toString();
+        String uf = ufEditText.getText().toString();
+        String complemento = complementoEditText.getText().toString();
 
         Colaborador colaborador = new Colaborador(nome,
                 dataDeNascimento,

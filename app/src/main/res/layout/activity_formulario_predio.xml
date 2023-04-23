@@ -40,7 +40,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="16dp"
-        android:paddingStart="8dp"
         android:paddingBottom="16dp"
         android:text="@string/activity_predio_label_endereco"
         android:textSize="28sp"
@@ -50,7 +49,7 @@
 
     <EditText
         android:id="@+id/activity_formulario_predio_rua"
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_margin="8dp"
         android:hint="@string/activity_formulario_predio_rua"
@@ -63,23 +62,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/activity_formulario_predio_label_endereco"
         tools:text="Av. Faria Lima" />
-
-    <EditText
-        android:id="@+id/activity_formulario_predio_numero"
-        android:layout_width="80dp"
-        android:layout_height="48dp"
-        android:layout_margin="8dp"
-        android:layout_marginTop="16dp"
-        android:hint="@string/activity_formulario_predio_numero"
-        android:importantForAutofill="no"
-        android:inputType="textCapWords"
-        android:padding="8dp"
-        android:textSize="22sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@id/activity_formulario_predio_rua"
-        app:layout_constraintTop_toBottomOf="@id/activity_formulario_predio_label_endereco"
-        tools:text="3500" />
 
     <EditText
         android:id="@+id/activity_formulario_predio_cep"
@@ -95,5 +77,21 @@
         app:layout_constraintStart_toStartOf="@id/activity_formulario_predio_rua"
         app:layout_constraintTop_toBottomOf="@id/activity_formulario_predio_rua"
         tools:text="00000-000" />
+
+    <EditText
+        android:id="@+id/activity_formulario_predio_numero"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:hint="@string/activity_formulario_predio_numero"
+        android:importantForAutofill="no"
+        android:inputType="textCapWords"
+        android:padding="8dp"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/activity_formulario_predio_cep"
+        app:layout_constraintTop_toBottomOf="@id/activity_formulario_predio_rua"
+        tools:text="3500" />
 
 </android.support.constraint.ConstraintLayout>

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Estoque</string>
 
-<!--    activity_colaborador-->
+    <!--    activity_colaborador-->
     <string name="activity_colaborador_imagem_do_colaborador">Imagem do colaborador</string>
 
     <string name="activity_colaborador_dados_colaborador">Dados do colaborador</string>
@@ -17,7 +17,7 @@
     <string name="activity_colaborador_label_dataDeNascimento">Label data de nascimento do colaborador</string>
     <string name="activity_colaborador_dataDeNascimento">Data de nascimento do colaborador</string>
 
-<!--    activity_formulario_colaborador-->
+    <!--    activity_formulario_colaborador-->
     <string name="activity_formulario_colaborador_hint_nome">Digite seu nome</string>
     <string name="activity_formulario_colaborador_hint_email">Digite seu E-mail</string>
     <string name="activity_formulario_colaborador_hint_senha">Senha</string>
@@ -32,13 +32,13 @@
     <string name="activity_formulario_colaborador_hint_uf">UF</string>
     <string name="activity_formulario_colaborador_hint_complemento">Complemento</string>
 
-<!--    activity_predio-->
+    <!--    activity_predio-->
     <string name="activity_predio_label_cliente">Cliente:</string>
     <string name="activity_predio_label_nome">Nome:</string>
     <string name="activity_predio_label_endereco">Endereço</string>
     <string name="activity_predio_label_cep">CEP:</string>
 
-<!--    activity_formulario_predio-->
+    <!--    activity_formulario_predio-->
     <string name="activity_formulario_predio_cliente">Cliente</string>
     <string name="activity_formulario_predio_nome">Nome</string>
     <string name="activity_formulario_predio_label_formulario">Endereço</string>
@@ -46,4 +46,24 @@
     <string name="activity_formulario_predio_numero">Nº</string>
     <string name="activity_formulario_predio_cep">CEP</string>
 
+    <!--    activity_formulario_estoque-->
+    <string name="activity_estoque_label_cliente">Cliente:</string>
+    <string name="activity_estoque_label_predio">Predio:</string>
+
+<!--    activity_formulario_equipamento-->
+    <string name="activity_formulario_equipamento_hint_nome">Nome</string>
+    <string name="activity_formulario_equipamento_hint_marca">Marca</string>
+    <string name="activity_formulario_equipamento_hint_modelo">Modelo</string>
+    <string name="activity_formulario_equipamento_hint_qrcode">QR Code</string>
+    <string name="activity_formulario_equipamento_label_spinner_status">Status</string>
+    <string name="activity_formulario_equipamento_label_spinner_predio">Predio</string>
+    <string name="activity_formulario_equipamento_hint_sala">Sala</string>
+    <string name="activity_formulario_equipamento_label_estoque">Estoque</string>
+    <string name="activity_formulario_equipamento_hint_prateleira">Prateleira</string>
+    <string name="activity_formulario_equipamento_hint_caixa">Caixa</string>
+    <string name="activity_formulario_equipamento_hint_observacao">Observação</string>
+    <string name="activity_formulario_equipamento_hint_numerodeserie">Número de Série</string>
+
+<!--    activity_formulario_equipamento_menu-->
+    <string name="activity_formulario_equipamento_menu_salvar">Salvar</string>
 </resources>

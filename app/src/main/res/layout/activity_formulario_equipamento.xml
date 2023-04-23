@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.activity.FormularioEquipamentoActivity">
+
+        <EditText
+            android:id="@+id/activity_formulario_equipamento_nome"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:hint="@string/activity_formulario_equipamento_hint_nome"
+            android:importantForAutofill="no"
+            android:inputType="textCapWords"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/activity_formulario_equipamento_marca"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:hint="@string/activity_formulario_equipamento_hint_marca"
+            android:importantForAutofill="no"
+            android:inputType="textCapWords"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_nome" />
+
+        <EditText
+            android:id="@+id/activity_formulario_equipamento_modelo"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:hint="@string/activity_formulario_equipamento_hint_modelo"
+            android:importantForAutofill="no"
+            android:inputType="textCapWords"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_marca" />
+
+        <EditText
+            android:id="@+id/activity_formulario_equipamento_qrCode"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:hint="@string/activity_formulario_equipamento_hint_qrcode"
+            android:importantForAutofill="no"
+            android:inputType="textCapWords"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_modelo" />
+
+        <TextView
+            android:id="@+id/activity_formulario_equipamento_label_spinner_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:labelFor="@id/activity_formulario_equipamento_spinner_status"
+            android:text="@string/activity_formulario_equipamento_label_spinner_status"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/activity_formulario_equipamento_qrCode"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_qrCode" />
+
+        <Spinner
+            android:id="@+id/activity_formulario_equipamento_spinner_status"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_label_spinner_status" />
+
+        <TextView
+            android:id="@+id/activity_formulario_equipamento_label_spinner_predio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginStart="104dp"
+            android:labelFor="@id/activity_formulario_equipamento_spinner_predio"
+            android:text="@string/activity_formulario_equipamento_label_spinner_predio"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/activity_formulario_equipamento_spinner_status"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_spinner_status" />
+
+        <Spinner
+            android:id="@+id/activity_formulario_equipamento_spinner_predio"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_label_spinner_predio" />
+
+        <EditText
+            android:id="@+id/activity_formulario_equipamento_sala"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:hint="@string/activity_formulario_equipamento_hint_sala"
+            android:importantForAutofill="no"
+            android:inputType="textCapWords"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_spinner_predio" />
+
+        <TextView
+            android:id="@+id/activity_formulario_equipamento_label_Estoque"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/activity_formulario_equipamento_label_estoque"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/activity_formulario_equipamento_sala"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_sala" />
+
+        <EditText
+            android:id="@+id/activity_formulario_equipamento_prateleira"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:hint="@string/activity_formulario_equipamento_hint_prateleira"
+            android:importantForAutofill="no"
+            android:inputType="textCapWords"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_label_Estoque" />
+
+        <EditText
+            android:id="@+id/activity_formulario_equipamento_caixa"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:focusable="true"
+            android:hint="@string/activity_formulario_equipamento_hint_caixa"
+            android:importantForAutofill="no"
+            android:inputType="textCapWords"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/activity_formulario_equipamento_prateleira"
+            app:layout_constraintTop_toTopOf="@id/activity_formulario_equipamento_prateleira" />
+
+        <EditText
+            android:id="@+id/activity_formulario_equipamento_observacao"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:hint="@string/activity_formulario_equipamento_hint_observacao"
+            android:importantForAutofill="no"
+            android:inputType="textCapWords"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/activity_formulario_equipamento_prateleira"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_prateleira" />
+
+        <EditText
+            android:id="@+id/activity_formulario_equipamento_numerodeserie"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:hint="@string/activity_formulario_equipamento_hint_numerodeserie"
+            android:importantForAutofill="no"
+            android:inputType="textCapWords"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/activity_formulario_equipamento_observacao"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_observacao" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
