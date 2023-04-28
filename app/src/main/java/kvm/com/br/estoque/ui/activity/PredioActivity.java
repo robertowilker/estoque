@@ -26,7 +26,7 @@ public class PredioActivity extends AppCompatActivity implements ConstantesActiv
     }
 
     private void vinculaCamposDoLayout() {
-        clienteTextView = findViewById(R.id.activity_predio_nome);
+        clienteTextView = findViewById(R.id.activity_predio_cliente);
         nomeTextView = findViewById(R.id.activity_predio_nome);
         ruaTextView = findViewById(R.id.activity_predio_rua);
         numeroTextView = findViewById(R.id.activity_predio_numero);

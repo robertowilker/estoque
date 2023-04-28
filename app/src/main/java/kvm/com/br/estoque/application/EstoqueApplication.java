@@ -9,8 +9,11 @@ import kvm.com.br.estoque.dao.PredioDAO;
 import kvm.com.br.estoque.model.Cliente;
 import kvm.com.br.estoque.model.Colaborador;
 import kvm.com.br.estoque.model.Endereco;
+import kvm.com.br.estoque.model.Equipamento;
 import kvm.com.br.estoque.model.Predio;
+import kvm.com.br.estoque.model.StatusDoEquipamento;
 import kvm.com.br.estoque.ui.service.ColaboradorService;
+import kvm.com.br.estoque.ui.service.EquipamentoService;
 
 public class EstoqueApplication extends Application {
 
@@ -19,6 +22,7 @@ public class EstoqueApplication extends Application {
     private Predio predio;
     private Cliente cliente;
     private PredioDAO predioDAO = new PredioDAO();
+    private EquipamentoService equipamentoService = new EquipamentoService();
 
     @Override
     public void onCreate() {
@@ -56,5 +60,20 @@ public class EstoqueApplication extends Application {
         );
 
         predioDAO.save(predio);
+
+        Equipamento equipamento = new Equipamento("Processadora",
+                "Crestron",
+                "CP4",
+                StatusDoEquipamento.OK,
+                "009975",
+                predio,
+                "101",
+                null,
+                "Novo",
+                "DIOCOLFKRJEOC34");
+
+        for(int i = 0; i < 9; i++){
+            equipamentoService.salva(equipamento);
+        }
     }
 }

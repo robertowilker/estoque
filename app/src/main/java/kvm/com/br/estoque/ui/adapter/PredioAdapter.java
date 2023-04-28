@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import kvm.com.br.estoque.R;
@@ -16,7 +15,7 @@ import kvm.com.br.estoque.model.Predio;
 public class PredioAdapter extends BaseAdapter {
 
     private final List<Predio> lista;
-    private Context context;
+    private final Context context;
 
     public PredioAdapter(Context context, List<Predio> lista) {
         this.context = context;
@@ -44,7 +43,7 @@ public class PredioAdapter extends BaseAdapter {
 
         Predio predio = lista.get(position);
         TextView nomeTextView = viewCriada.findViewById(R.id.item_predio_nome);
-        nomeTextView.setText(predio.getNome().toString());
+        nomeTextView.setText(predio.getNome());
 
         return viewCriada;
     }

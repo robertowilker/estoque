@@ -3,17 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".ui.activity.ListaEquipamentoActivity">
 
-    <TextView
-        android:id="@+id/item_predio_nome"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="22sp"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_lista_equipamento_recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:text="3500" />
+        tools:listitem="@layout/item_equipamento" />
 </android.support.constraint.ConstraintLayout>

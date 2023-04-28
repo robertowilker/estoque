@@ -71,7 +71,7 @@ public class FormularioEquipamentoActivity extends AppCompatActivity implements 
         equipamento = new Equipamento(nome,
                 marca,
                 modelo,
-                new StatusDoEquipamento(),
+                StatusDoEquipamento.OK,
                 qrCode,
                 predioSelecionado,
                 "101",

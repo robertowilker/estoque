@@ -50,7 +50,7 @@
     <string name="activity_estoque_label_cliente">Cliente:</string>
     <string name="activity_estoque_label_predio">Predio:</string>
 
-<!--    activity_formulario_equipamento-->
+    <!--    activity_formulario_equipamento-->
     <string name="activity_formulario_equipamento_hint_nome">Nome</string>
     <string name="activity_formulario_equipamento_hint_marca">Marca</string>
     <string name="activity_formulario_equipamento_hint_modelo">Modelo</string>
@@ -64,6 +64,26 @@
     <string name="activity_formulario_equipamento_hint_observacao">Observação</string>
     <string name="activity_formulario_equipamento_hint_numerodeserie">Número de Série</string>
 
-<!--    activity_formulario_equipamento_menu-->
+    <!--    activity_formulario_equipamento_menu-->
     <string name="activity_formulario_equipamento_menu_salvar">Salvar</string>
+
+    <!--    activity_equipamento_menu-->
+    <string name="activity_equipamento_label_nome">Nome</string>
+    <string name="activity_equipamento_label_marca">Marca</string>
+    <string name="activity_equipamento_label_modelo">Modelo</string>
+    <string name="activity_equipamento_label_status">Status:</string>
+    <string name="activity_equipamento_label_qrcode">QR Code</string>
+    <string name="activity_equipamento_label_sala">Sala</string>
+    <string name="activity_equipamento_label_predio">Predio</string>
+    <string name="activity_equipamento_label_estoque">Estoque</string>
+    <string name="activity_equipamento_label_estoque_prateleira">Prateleira</string>
+    <string name="activity_equipamento_label_estoque_caixa">caixa</string>
+    <string name="activity_equipamento_label_observacao">Observação</string>
+    <string name="activity_equipamento_label_numero_de_serie">Número de Série</string>
+
+<!--    item_equipamento-->
+    <string name="item_equipamento_label_qr_code">QR Code:</string>
+
+<!--    activity_lista_equipamento_menu-->
+    <string name="activity_lista_equipamento_menu_botao_novo">Novo</string>
 </resources>

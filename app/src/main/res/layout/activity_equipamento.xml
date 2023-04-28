@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.activity.EquipamentoActivity">
+
+        <TextView
+            android:id="@+id/activity_formulario_equipamento_label_nome"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/activity_equipamento_label_nome"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/activity_formulario_equipamento_nome"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/activity_formulario_equipamento_label_nome"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_label_nome"
+            tools:text="Procesador" />
+
+        <TextView
+            android:id="@+id/activity_formulario_equipamento_label_marca"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/activity_equipamento_label_marca"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/activity_formulario_equipamento_nome"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_nome" />
+
+        <TextView
+            android:id="@+id/activity_formulario_equipamento_marca"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/activity_formulario_equipamento_label_marca"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_label_marca"
+            tools:text="Crestron" />
+
+        <TextView
+            android:id="@+id/activity_formulario_equipamento_label_modelo"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/activity_equipamento_label_modelo"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/activity_formulario_equipamento_marca"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_marca" />
+
+        <TextView
+            android:id="@+id/activity_formulario_equipamento_modelo"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/activity_formulario_equipamento_label_modelo"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_label_modelo"
+            tools:text="CP4" />
+
+        <TextView
+            android:id="@+id/activity_formulario_equipamento_label_status"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/activity_equipamento_label_status"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/activity_formulario_equipamento_modelo"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_modelo" />
+
+        <TextView
+            android:id="@+id/activity_formulario_equipamento_status"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/activity_formulario_equipamento_label_status"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_modelo"
+            tools:text="OK" />
+
+        <TextView
+            android:id="@+id/activity_formulario_equipamento_label_qrcode"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/activity_equipamento_label_qrcode"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/activity_formulario_equipamento_label_status"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_label_status" />
+
+        <TextView
+            android:id="@+id/activity_formulario_equipamento_qrcode"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/activity_formulario_equipamento_label_qrcode"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_label_qrcode"
+            tools:text="007843" />
+
+        <TextView
+            android:id="@+id/activity_formulario_equipamento_label_sala"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/activity_equipamento_label_sala"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/activity_formulario_equipamento_label_qrcode"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_label_status" />
+
+        <TextView
+            android:id="@+id/activity_formulario_equipamento_sala"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/activity_formulario_equipamento_qrcode"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_label_qrcode"
+            tools:text="510" />
+
+        <TextView
+            android:id="@+id/activity_formulario_equipamento_label_predio"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/activity_equipamento_label_predio"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/activity_formulario_equipamento_qrcode"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_qrcode" />
+
+        <TextView
+            android:id="@+id/activity_formulario_equipamento_predio"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/activity_formulario_equipamento_label_predio"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_label_predio"
+            tools:text="3500" />
+
+        <TextView
+            android:id="@+id/activity_formulario_equipamento_label_estoque"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/activity_equipamento_label_estoque"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/activity_formulario_equipamento_predio"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_predio" />
+
+        <TextView
+            android:id="@+id/activity_formulario_equipamento_label_estoque_prateleira"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/activity_equipamento_label_estoque_prateleira"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/activity_formulario_equipamento_label_estoque"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_label_estoque" />
+
+        <TextView
+            android:id="@+id/activity_formulario_equipamento_estoque_prateleira"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/activity_formulario_equipamento_label_estoque_prateleira"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_label_estoque_prateleira"
+            tools:text="1" />
+
+        <TextView
+            android:id="@+id/activity_formulario_equipamento_label_estoque_caixa"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/activity_equipamento_label_estoque_caixa"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/activity_formulario_equipamento_label_estoque_prateleira"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_label_estoque" />
+
+        <TextView
+            android:id="@+id/activity_formulario_equipamento_estoque_caixa"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/activity_formulario_equipamento_estoque_prateleira"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_label_estoque_prateleira"
+            tools:text="10" />
+
+        <TextView
+            android:id="@+id/activity_formulario_equipamento_label_observacao"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/activity_equipamento_label_observacao"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/activity_formulario_equipamento_estoque_prateleira"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_estoque_prateleira" />
+
+        <TextView
+            android:id="@+id/activity_formulario_equipamento_observacao"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/activity_formulario_equipamento_label_observacao"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_label_observacao" />
+
+        <TextView
+            android:id="@+id/activity_formulario_equipamento_label_numero_de_serie"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/activity_equipamento_label_numero_de_serie"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/activity_formulario_equipamento_observacao"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_observacao" />
+
+        <TextView
+            android:id="@+id/activity_formulario_equipamento_numero_de_serie"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:padding="8dp"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/activity_formulario_equipamento_label_numero_de_serie"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_equipamento_label_numero_de_serie" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
